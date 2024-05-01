@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Welcome To Our Awesome Online store, where you will find all kinds of products which are reuired on a day to day basis"
+    />
+    <meta name="keywords" content="products,online,store,new" />
+    <meta name="author" content="Debajit Chakraborty" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="canonical"
+      href="./index.html--need to be a seperate webpage with same contents
+    "
+    /> -->
+    <!-- <meta name="robots" content="index,follow" />  -->
+    <title>Ecommerce Website</title>
+    <!--? cdn fa  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--? navbar  -->
+    <header>
+      <div class="container header-container">
+        <a href="index.html">
+          <picture>
+            <source srcset="./public/images/log-min.webp" />
+            <source srcset="./public/images/log-min.png" />
+
+            <img
+              width="100px"
+              height="100px"
+              class="logo"
+              src="./public/images/log-min.png"
+              alt="main-logo"
+            /> </picture
+        ></a>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#" class="cart-value"
+                ><i class="fa-solid fa-cart-shopping"><span>0</span></i></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="ham">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </header>
+
+    <!--? Offer summary section  -->
+    <section class="add-to-cart-element">
+      <section>
+        <div id="product-cart-container"></div>
+      </section>
+      <section class="product-cart-total-elem">
+        <div class="product-cart-total-element">
+          <p class="offer-info">Selected Offer Summary</p>
+          <div class="product-order-total">
+            <div class="sub-total-box">
+              <p>Sub Total:</p>
+              <p class="product-sub-total">0</p>
+            </div>
+            <div class="tax-box">
+              <p>Tax:</p>
+              <p class="product-tax">₹ 50</p>
+            </div>
+            <hr />
+            <div class="final-total-box">
+              <p>Final Total:</p>
+              <p class="product-final-total">0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!--?  template for cart page -->
+    <template class="product-template">
+      <div class="cards-cart" id="card-value">
+        <article class="informations card">
+          <span class="category"></span>
+          <div class="img-container">
+            <img src="" alt="" class="product-img" />
+          </div>
+          <h2 class="product-name"></h2>
+          <p class="product-actual-price"></p>
+          <div class="stock-element">
+            <button class="cart-increment">+</button>
+            <p class="qty">1</p>
+            <button class="cart-decrement">-</button>
+          </div>
+          <button class="add-to-cart-btn remove-to-cart-btn">Remove</button>
+        </article>
+      </div>
+    </template>
+
+    <!--? footer  -->
+    <footer>
+      <div class="footer-box">
+        <div class="footer-info">
+          <picture>
+            <source srcset="./public/images/logo-min.webp" />
+            <source srcset="./public/images/logo-min.png" />
+
+            <img
+              width="100px"
+              height="100px"
+              class="logo"
+              src="./public/images/logo-min.png"
+              alt="footer-logo"
+            />
+          </picture>
+          <p>Welcome To Our Awesome Online Store</p>
+        </div>
+        <div class="footer-info">
+          <h2>Shopping</h2>
+          <ul>
+            <li><a href="#">Computer Store</a></li>
+            <li><a href="#">Laptop Store</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Sales and Discount</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h2>Experience</h2>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Payment Method</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Return and Exchange</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h2>Newsletter</h2>
+          <p>Welcome To Our Awesome Online Store</p>
+          <label for="nl"></label>
+          <input type="text" id="nl" placeholder="Your Email" />
+        </div>
+      </div>
+      <!--? copyright  -->
+      <section class="copyright">
+        <p>© Copyright ThapaStore All Rights Reserved</p>
+        <p>Designed by Anonymous 🎭</p>
+      </section>
+    </footer>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="showAddToCart.js"></script>
+  </body>
+</html>

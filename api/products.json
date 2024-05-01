@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "category": "Computers",
+    "brand": "ExampleBrand",
+    "price": 400,
+    "actual_price": 100,
+    "stock": 10,
+    "description": "Powerful Laptop with 8GB RAm, 512GB SSD.",
+    "image": "../images/lapi-min.webp"
+  },
+  {
+    "id": 2,
+    "name": "Smart Phone",
+    "category": "Mobiles",
+    "brand": "Tech Guru",
+    "price": 300,
+    "actual_price": 200,
+    "stock": 150,
+    "description": "Powerful Phone with good camera",
+    "image": "../images/mobiles-min.webp"
+  },
+  {
+    "id": 3,
+    "name": "Television",
+    "category": "TV",
+    "brand": "TV Guru",
+    "price": 800,
+    "actual_price": 300,
+    "stock": 750,
+    "description": "Great TV with  good display",
+    "image": "../images/tv-min.webp"
+  },
+  {
+    "id": 4,
+    "name": "Watch",
+    "category": "Watches",
+    "brand": "Watch Guru",
+    "price": 350,
+    "actual_price": 150,
+    "stock": 250,
+    "description": "Smart Wateches to look fashionable",
+    "image": "../images/watch-min.webp"
+  },
+  {
+    "id": 5,
+    "name": "HeadPhones",
+    "category": "Head Phones",
+    "brand": "Sound Beats",
+    "price": 450,
+    "actual_price": 200,
+    "stock": 50,
+    "description": "High Quality Headphones",
+    "image": "../images/headphone-min.webp"
+  },
+  {
+    "id": 6,
+    "name": "IPhones",
+    "category": "Iphone",
+    "brand": "Grapple",
+    "price": 500,
+    "actual_price": 250,
+    "stock": 250,
+    "description": "High Quality Iphones",
+    "image": "../images/iphone-min.webp"
+  }
+]
